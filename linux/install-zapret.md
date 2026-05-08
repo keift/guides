@@ -42,7 +42,6 @@ Installation settings can be changed in the following ways.
 > ```
 
 <!--
-
 <details>
 <summary>Archived: Step-by-step installation</summary>
 
