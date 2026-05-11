@@ -32,6 +32,24 @@ sudo zypper -n install gnome-software-plugin-flatpak
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
+## TIP: Flatpak integration for Visual Studio Code
+
+If you are using the Flatpak version of Visual Studio Code, the integrated terminal is also sandboxed. To fix this, go to **Settings > Top-Right Icon: Open Settings (JSON)** and paste the configuration below at the end of the file. This will make the IDE's terminal work flawlessly, just like your standard host terminal.
+
+```json
+{
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "/app/bin/host-spawn",
+      "args": ["bash"],
+      "icon": "terminal-bash",
+      "overrideName": true
+    }
+  },
+  "terminal.integrated.defaultProfile.linux": "bash"
+}
+```
+
 ## TIP: Uninstall Flatpak and Gnome Software
 
 You can uninstall it as follows.
