@@ -3,57 +3,7 @@ description: Single step, bypass DPI barriers.
 icon: lock-keyhole-open
 ---
 
-## 1. Install dependencies
-
-Dependencies for installation.
-
-```shell
-# Debian, Ubuntu, Linux Mint, Kali Linux, Pop!_OS (APT)
-sudo apt install -y bind9-dnsutils curl nftables systemd-resolved unzip wget
-
-# RHEL, Fedora, CentOS, AlmaLinux, Rocky Linux (DNF)
-sudo dnf install -y bind-utils curl nftables systemd-resolved unzip wget
-
-# Arch Linux, Manjaro, CachyOS, EndeavourOS, Artix Linux (Pacman)
-sudo pacman -S --noconfirm bind curl nftables systemd-resolved unzip wget
-
-# openSUSE Tumbleweed, openSUSE Leap, SUSE Linux Enterprise, GeckoLinux, Regata OS (Zypper)
-sudo zypper -n install bind-utils curl nftables systemd-resolved unzip wget
-```
-
-## 2. Change DNS settings
-
-Zapret only bypasses DPI restrictions. But it does not set up a DNS for us. We need to do that ourselves.
-
-- [Cloudflare DNS](https://keift.gitbook.io/guides/linux/install-dnscrypt-proxy#alternative-cloudflare-dns-recommended) (Recommended)
-- [Google DNS](https://keift.gitbook.io/guides/linux/install-dnscrypt-proxy#alternative-google-dns)
-
-## 3. Download Zapret
-
-Download the compiled zip file as release on GitHub.
-
-```shell
-# Define Zapret version
-zapret_version="72.12"
-
-# Delete if present
-sudo rm -rf /tmp/zapret
-sudo rm -rf /tmp/zapret.zip
-
-# Download the compiled zip file from GitHub
-sudo wget -O /tmp/zapret.zip https://github.com/bol-van/zapret/releases/download/v"${zapret_version}"/zapret-v"${zapret_version}".zip
-
-# Unzip the zip file
-sudo unzip -d /tmp /tmp/zapret.zip
-
-# Rename the file
-sudo mv /tmp/zapret-v"${zapret_version}" /tmp/zapret
-
-# Delete the zip file that we no longer need
-sudo rm -rf /tmp/zapret.zip
-```
-
-## 4. Prepare for installation
+## 1. Prepare for installation
 
 Install the requirements and prepare to perform a clean install.
 
@@ -76,7 +26,7 @@ select firewall type :
 your choice (default : nftables) : 🟩 [LEAVE THIS QUESTION BLANK] 🟩
 ```
 
-## 5. Do Blockcheck
+## 2. Do Blockcheck
 
 Find the DPI methods implemented by the ISP.
 
@@ -143,7 +93,7 @@ This is an example settings for **NFQWS**. It may be different for each person. 
 --dpi-desync=fakeddisorder --dpi-desync-ttl=1 --dpi-desync-autottl=-5 --dpi-desync-split-pos=1
 ```
 
-## 6. Install Zapret
+## 3. Install Zapret
 
 We can start installing Zapret.
 
@@ -242,7 +192,7 @@ WAN interface :
 your choice (default : ANY) : 🟩 [LEAVE THIS QUESTION BLANK] 🟩
 ```
 
-## 7. Finish the installation
+## 4. Finish the installation
 
 All done! 🎉 We are done with this folder of Zapret anymore. We can delete it.
 
@@ -262,23 +212,4 @@ sudo /opt/zapret/uninstall_easy.sh
 # Remove unused files
 sudo rm -rf /opt/zapret
 sudo rm -rf /tmp/zapret
-```
-
-## TIP: Remove DNS settings
-
-You can remove it as follows.
-
-```shell
-# Enable and start Systemd-Resolved
-sudo systemctl enable systemd-resolved
-sudo systemctl start systemd-resolved
-
-# Leave the Systemd-Resolved configuration blank
-sudo tee /etc/systemd/resolved.conf &>/dev/null <<< ""
-
-# Make /etc/resolv.conf a symlink to Systemd-Resolved file
-sudo test -f /run/systemd/resolve/stub-resolv.conf && sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
-
-# Restart Systemd-Resolved for the changes to take effect
-sudo systemctl restart systemd-resolved
 ```
