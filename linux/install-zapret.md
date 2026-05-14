@@ -31,12 +31,12 @@ Here it is.
 
 Installation settings can be changed in the following ways.
 
-> | Parameter             | Default     | Description                                                                                                                                                                             |
-> | --------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-> | `--blockcheck-domain` | _automatic_ | This tool finds the correct domain name by sequentially testing blocked websites in different countries for blockcheck. This parameter allows you to specify this domain name yourself. |
->
-> Example:
->
-> ```shell
-> curl -fsSL https://raw.github.com/keift/zapret/refs/heads/main/src/install.sh | sudo bash -s -- --blockcheck-domain discord.com
-> ```
+| Parameter             | Default     | Description                                                                                                                                                                             |
+| --------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `--blockcheck-domain` | _automatic_ | This tool finds the correct domain name by sequentially testing blocked websites in different countries for blockcheck. This parameter allows you to specify this domain name yourself. |
+
+Example:
+
+```shell
+curl -fsSL https://raw.github.com/keift/zapret/refs/heads/main/src/install.sh | sudo bash -s -- --blockcheck-domain discord.com
+```
