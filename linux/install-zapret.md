@@ -40,5 +40,3 @@ Installation settings can be changed in the following ways.
 > ```shell
 > curl -fsSL https://raw.github.com/keift/zapret/refs/heads/main/src/install.sh | sudo bash -s -- --blockcheck-domain discord.com
 > ```
-
-.
