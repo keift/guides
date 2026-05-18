@@ -9,6 +9,9 @@ You can install it as follows.
 
 ```shell
 # Pull and run the specified shell script
+curl -fsSL https://get.docker.com | sh
+
+# Pull and run the specified shell script
 curl -sSL https://dokploy.com/install.sh | sh
 ```
 
