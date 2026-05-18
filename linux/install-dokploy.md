@@ -12,7 +12,7 @@ You can install it as follows.
 curl -fsSL https://get.docker.com | sh
 
 # Pull and run the specified shell script
-curl -sSL https://dokploy.com/install.sh | sh
+curl -fsSL https://dokploy.com/install.sh | sh
 ```
 
 ## TIP: Uninstall Dokploy
