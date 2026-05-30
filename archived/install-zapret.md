@@ -28,7 +28,7 @@ Find the DPI methods implemented by the ISP.
 
 ```shell
 # Run the test
-sudo /tmp/zapret/blockcheck.sh
+sudo /opt/zapret/blockcheck.sh
 ```
 
 Here are the answers you need to give to the questions you may encounter during this time.
@@ -95,7 +95,7 @@ We can start installing Zapret.
 
 ```shell
 # Start the installation
-sudo /tmp/zapret/install_easy.sh
+sudo /opt/zapret/install_easy.sh
 ```
 
 Here are the answers you need to give to the questions you may encounter during this time.
@@ -196,5 +196,4 @@ sudo /opt/zapret/uninstall_easy.sh
 
 # Remove unused files
 sudo rm -rf /opt/zapret
-sudo rm -rf /tmp/zapret
 ```
