@@ -8,13 +8,9 @@ icon: lock-keyhole-open
 Install the requirements and prepare to perform a clean install.
 
 ```shell
-# For a clean installation, remove any installation files that may be present in case an installation has been made before
-sudo /opt/zapret/uninstall_easy.sh
-sudo rm -rf /opt/zapret
-
 # Install requirements
-sudo /tmp/zapret/install_prereq.sh
-sudo /tmp/zapret/install_bin.sh
+sudo /opt/zapret/install_prereq.sh
+sudo /opt/zapret/install_bin.sh
 ```
 
 Here are the answers you need to give to the questions you may encounter during this time.
@@ -46,7 +42,7 @@ ip protocol version(s) - 4, 6 or 46 for both (default: 46) : 🟩 [LEAVE THIS QU
 ```
 
 ```
-check http (default : Y) (Y/N) ? 🟩 [LEAVE THIS QUESTION BLANK] 🟩
+check http (default : Y) (Y/N) ? 🟥 [TYPE "N"] 🟥
 ```
 
 ```
@@ -103,10 +99,6 @@ sudo /tmp/zapret/install_easy.sh
 ```
 
 Here are the answers you need to give to the questions you may encounter during this time.
-
-```
-do you want the installer to copy it for you (default : N) (Y/N) ? 🟥 [TYPE "Y"] 🟥
-```
 
 ```
 select firewall type :
@@ -192,14 +184,7 @@ WAN interface :
 your choice (default : ANY) : 🟩 [LEAVE THIS QUESTION BLANK] 🟩
 ```
 
-## 4. Finish the installation
-
 All done! 🎉 We are done with this folder of Zapret anymore. We can delete it.
-
-```shell
-# Delete the folder
-sudo rm -rf /tmp/zapret
-```
 
 ## TIP: Uninstall Zapret
 
