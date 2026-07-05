@@ -31,11 +31,11 @@ Here it is.
 
 Installation settings can be changed in the following ways.
 
-> | Parameter             | Default     | Description                                                                                                                                                                             |
-> | --------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-> | `--strict`            | `false`     | This parameter allows you to use the strictest method among the blockcheck results.                                                                                                     |
-> | `--blockcheck-domain` | _automatic_ | This tool finds the correct domain name by sequentially testing blocked websites in different countries for blockcheck. This parameter allows you to specify this domain name yourself. |
->
+| Parameter             | Default     | Description                                                                                                                                                                             |
+| --------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `--strict`            | `false`     | This parameter allows you to use the strictest method among the blockcheck results.                                                                                                     |
+| `--blockcheck-domain` | _automatic_ | This tool finds the correct domain name by sequentially testing blocked websites in different countries for blockcheck. This parameter allows you to specify this domain name yourself. |
+
 > Example:
 >
 > ```shell
