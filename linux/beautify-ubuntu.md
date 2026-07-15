@@ -34,7 +34,7 @@ gsettings set org.gnome.shell.extensions.tiling-assistant disable-tile-groups fa
 sudo snap remove firefox
 sudo apt install -y flatpak gnome-software gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install org.mozilla.firefox
+flatpak install -y org.mozilla.firefox
 
 gsettings set org.gnome.shell favorite-apps "['org.gnome.Software.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Ptyxis.desktop', 'org.mozilla.firefox.desktop']"
 ```
