@@ -29,7 +29,7 @@ sudo zypper -n install gnome-software
 sudo zypper -n install gnome-software-plugin-flatpak
 
 # Define Flathub remote reference
-sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
 ## TIP: Flatpak integration for Visual Studio Code
