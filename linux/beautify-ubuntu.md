@@ -6,9 +6,9 @@ icon: ubuntu
 Paste these commands into your terminal for a Keift style Ubuntu.
 
 ```shell
+gsettings set org.gnome.desktop.interface accent-color "blue"
 gsettings set org.gnome.desktop.interface icon-theme "Yaru-blue"
 gsettings set org.gnome.desktop.interface gtk-theme "Yaru-blue"
-gsettings set org.gnome.desktop.interface accent-color "blue"
 
 gsettings set org.gnome.shell.extensions.ding icon-size "standard"
 gsettings set org.gnome.shell.extensions.ding start-corner "bottom-right"
@@ -16,11 +16,9 @@ gsettings set org.gnome.shell.extensions.ding show-home false
 gsettings set org.gnome.shell.extensions.ding show-trash false
 
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed true
-gsettings set org.gnome.shell.extensions.dash-to-dock intellihide false
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 48
 gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor false
-gsettings set org.gnome.shell.extensions.dash-to-dock preferred-monitor 0
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position "BOTTOM"
 gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts true
 gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts-only-mounted false
