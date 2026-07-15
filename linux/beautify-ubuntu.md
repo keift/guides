@@ -6,6 +6,8 @@ icon: ubuntu
 Paste these commands into your terminal for a Keift style Ubuntu.
 
 ```shell
+gsettings set org.gnome.desktop.interface icon-theme "Yaru-blue"
+gsettings set org.gnome.desktop.interface gtk-theme "Yaru-blue"
 gsettings set org.gnome.desktop.interface accent-color "blue"
 
 gsettings set org.gnome.shell.extensions.ding icon-size "standard"
