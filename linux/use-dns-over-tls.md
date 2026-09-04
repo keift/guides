@@ -26,6 +26,7 @@ DNS=2606:4700:4700::1111#one.one.one.one
 DNS=1.0.0.1#one.one.one.one
 DNS=2606:4700:4700::1001#one.one.one.one
 
+Domains=~.
 DNSOverTLS=yes
 EOF
 
@@ -59,6 +60,7 @@ DNS=2001:4860:4860::8888#dns.google
 DNS=8.8.4.4#dns.google
 DNS=2001:4860:4860::8844#dns.google
 
+Domains=~.
 DNSOverTLS=yes
 EOF
 
