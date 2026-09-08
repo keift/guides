@@ -184,6 +184,10 @@ WAN interface :
 your choice (default : ANY) : 🟩 [LEAVE THIS QUESTION BLANK] 🟩
 ```
 
+```
+do you want to auto download ip/host list (default : N) (Y/N) ? 🟩 [LEAVE THIS QUESTION BLANK] 🟩
+```
+
 All done! 🎉 We are done with this folder of Zapret anymore. We can delete it.
 
 ## TIP: Uninstall Zapret
