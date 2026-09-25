@@ -1,5 +1,5 @@
 ---
-description: Single step, bypass DPI barriers.
+description: Single step, bypass DPI blocks.
 icon: lock-keyhole-open
 ---
 

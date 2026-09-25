@@ -1,5 +1,5 @@
 ---
-description: Install Zapret to bypass DPI barriers.
+description: Install Zapret to bypass DPI blocks.
 icon: lock-keyhole-open
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: Bypass DPI barriers.
+description: Bypass DPI blocks.
 icon: lock-keyhole-open
 ---
 
