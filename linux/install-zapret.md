@@ -3,7 +3,7 @@ description: Single step, bypass DPI barriers.
 icon: lock-keyhole-open
 ---
 
-We save you from the hassle of setting up Zapret and make it easy to overcome all DPI access restrictions with a single command.
+We save you from the hassle of setting up Zapret and make it easy to overcome all DPI blocks with a single command.
 
 ## Installation
 
